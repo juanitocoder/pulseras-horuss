@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+  <title>Pulseras Horus</title>
+  <link rel="shortcut icon" href="icon.jpeg" type="image/x-icon">
+  <link rel="stylesheet" href="stilos.css">
+</head>
+<body>
+<header>
+  <a href="" target="_blank" class="logo">
+    <img src="Untitled design.png" alt="logo">
+  </a>
+  <div class="menu-toggle" id="menu-toggle">
+    ☰ 
+  </div>
+  <nav class="Menu">
+    <button class="cerrar close-menu">X</button>
+    <a href="#" class="link">Página De Inicio</a>
+    <a href="#" class="link">Sobre Nosotros</a>
+    <a href="#" class="link">Pulseras</a>
+    <a href="#" class="link">Servicios</a>
+    <a href="#" class="link">Testimonios</a>
+    <a href="#" class="link">Contacto</a>
+  </nav>
+  <div class="icons">
+    <span class="icon">
+      <i class="fa-solid fa-cart-shopping"></i>
+    </span>
+    <span class="icon">
+      <i class="fa-solid fa-user"></i>
+    </span>
+  </div>
+</header>
+<main>
+  <section class="frase">
+    <section class="caja-dos">
+      <h1>¡Pulseras Horus!</h1>
+      <hr style="border: 1px solid #ff8c00;">
+      <p>
+        Generando Confianza y satisfacción en cada uno de nuestros clientes.
+      </p>
+    </section>
+  </section>
+  <section class="nosotros  ">
+    <div class="texto-nosotros">
+      <h1>Nosotros</h1>
+    <hr style="border: 2px solid rgb(0, 0, 0);">
+    <p> En nuestra empresa, nos comprometemos a ofrecer productos de alta calidad y a brindar un valor excepcional a nuestros clientes. Nuestra misión es generar confianza y asegurarnos de que todos nuestros productos sean de su total agrado.</p>
+    </div>
+    
+    <div class="circulo">
+      <img src="circuloimg.jpg" alt="imagen horus">
+    </div>
+  </section>
+  <section class="descubre">
+    <div class="texto-descubre">
+      <h1>Descubre la excelencia</h1>
+      <hr style="border: 1px solid  #ff8c00;">
+    <p>Calidad y valor en cada producto</p>
+    </div>
+    <div class="imagen-descubre">
+      <img src="descubre.jpg" alt="imagen descubre">
+
+    </div>
+  </section>
+</main>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const cerrar = document.querySelector('.close-menu');
+    const nav = document.querySelector('nav');
+
+    
+    menuToggle.addEventListener('click', () => {
+      nav.classList.add('active');
+    });
+
+    
+    cerrar.addEventListener('click', () => {
+      nav.classList.remove('active');
+    });
+  });
+</script>
+
+<section id="productos">
+  <h2>Nuestros Productos</h2>
+  <div class="producto">
+      <img src="pulsera1.jpg" alt="Pulsera 1">
+      <p>Pulsera de cuero con amuleto Horus - $15.000</p>
+  </div>
+  <div class="producto">
+      <img src="pulsera2.jpg" alt="Pulsera 2">
+      <p>Pulsera de piedras naturales - $20.000</p>
+  </div>
+</section>
+
+<section id="contacto">
+  <h2>Contacto</h2>
+  <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+      
+      <button type="submit">Enviar</button>
+  </form>
+</section>
+<footer>
+  <p>&copy; 2025 Pulseras Horus. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>
